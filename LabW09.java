@@ -62,7 +62,7 @@ public class LabW09 {
 	}
 
 }
-/*
+
 class Link{
 	public int data;
 	public Link next;
@@ -97,4 +97,4 @@ class LinkedList{
 			first=insert;
 		}
 	}
-} */
+} 
