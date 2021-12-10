@@ -1,5 +1,13 @@
 import java.util.Scanner;
 
+/*
+Sort a list of words by the total sum of their ASCII values for each character in the word. The words printed first will be 
+this with the lowest ASCII sum.
+For words of the exact same ASCII sum (e.g "dog" and "god") these should be sorted reverse alphabetically  (so "god" would come before "dog")
+
+{"this","dog","is","thomas","god","hotmas","test"} -> {"is","god","dog","this","test","thomas","hotmas"}
+*/
+
 public class LabW11 {
 	
 	public static String[] words;
@@ -21,7 +29,7 @@ public class LabW11 {
 		
 		mergeSort(0, words.length-1);
 		
-		for(int i = words.length-1; i >= 0; i--) {
+		for(int i = n-1; i >= 0; i--) {
 			System.out.println(words[i] + " " + words[i].chars().sum());
 		}
 	} 
